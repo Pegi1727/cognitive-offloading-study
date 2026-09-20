@@ -98,6 +98,7 @@ Author: Pegah Merrikhi, Ph.D.
 Contact: pegah.merrikhiii@gmail.com
 
 ## 📁 Repository Structure
+## 📁 Repository Structure
 ```text
 ├── Figures/                               # High-resolution (300 DPI) publication figures
 │   ├── graphical abstarctt.png            # Graphical Abstract
@@ -109,7 +110,7 @@ Contact: pegah.merrikhiii@gmail.com
 ├── data/                                  # Open-access datasets
 │   ├── raw/
 │   │   ├── screening_data.xlsx            # Initial screening cohort (N=90)
-│   │   └── experimental_phase_data.xlsx   # Experimental dataset
+│   │   └── experimental_phase_data.xlsx   # Experimental dataset (N=63)
 │   └── processed/
 │       ├── screening_data.pkl             # Serialized Python datasets
 │       ├── experimental_phase_data.pkl
@@ -118,6 +119,12 @@ Contact: pegah.merrikhiii@gmail.com
 │   ├── 01_Data_Cleaning.ipynb
 │   ├── 02_Descriptive_Analysis.ipynb
 │   └── 03_Inferential_Analysis.ipynb
+├── advanced_analysis/                     # Advanced machine learning & diagnostic scripts
+│   ├── 04_power_analysis.py               # Statistical power calculation for N=63
+│   ├── 05_outlier_detection.py            # Robust outlier screening (Z-scores)
+│   ├── 06_correlation_matrix.py           # Inter-variable correlation heatmap
+│   ├── 07_predictive_modeling.py          # Random Forest feature importance analysis
+│   └── 08_generate_summary_tables.py      # Automated publication-ready summary tables
 ├── R_scripts/                             # Reproducible R pipelines
 │   ├── 00_install_dependencies.R
 │   ├── 01_descriptives.R
