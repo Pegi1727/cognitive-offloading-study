@@ -60,6 +60,42 @@ The experimental phase evaluated the differential impacts of generative AI assis
 4. **Pedagogical Implication:** AI integration in education must shift from passive offloading tools to cognitive prompting mechanisms that enforce active cognitive engagement and critical evaluation.
 
 ---
+🛠 Analysis & Reproducibility
+Python Environment
+bash
+conda env create -f environment.yml
+conda activate cognitive-offloading
+jupyter notebook
+R Pipeline Execution
+R
+source("R_scripts/00_install_dependencies.R")
+source("R_scripts/01_descriptives.R")
+source("R_scripts/02_screening_anova.R")
+
+---
+📖 Citation
+If you use the datasets, analysis scripts, or figures from this repository, please cite:
+
+APA Format
+Merrikhi, P. (2026). The Cognitive Cost of Cognitive Offloading: Generative AI, Learner Profiles, and Reading Comprehension. Educational Technology & Society (Under Review). DOI: 10.5281/zenodo.placeholder
+---
+BibTeX
+bibtex
+@article{merrikhi2026cognitive,
+  title={The Cognitive Cost of Cognitive Offloading: Generative AI, Learner Profiles, and Reading Comprehension},
+  author={Merrikhi, Pegah},
+  journal={Educational Technology \& Society},
+  year={2026},
+  doi={10.5281/zenodo.placeholder},
+  url={https://github.com/Pegi1727/cognitive-offloading-study}
+}
+---
+📜 License
+This repository is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. Datasets and code are openly accessible for scientific verification and reproduction.
+---
+Author: Pegah Merrikhi, Ph.D.
+
+Contact: pegah.merrikhiii@gmail.com
 
 ## 📁 Repository Structure
 ```text
