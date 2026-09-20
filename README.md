@@ -9,17 +9,22 @@ Official open-science research repository for the empirical study investigating 
 
 ---
 
-## 📌 Graphical Abstract & Visual Findings
+## 📌 Graphical Abstract & Methodology
 
-### Experimental Methodology Pipeline
+### Graphical Abstract
 <p align="center">
-  <img src="Figures/Figure_1_Methodology.png" alt="Methodological Flowchart" width="850">
+  <img src="Figures/graphical%20abstarctt.png" alt="Graphical Abstract" width="850">
+</p>
+
+### Figure 1: Experimental Methodology Pipeline
+<p align="center">
+  <img src="Figures/figure%201.png" alt="Figure 1: Experimental Methodology" width="850">
 </p>
 *Figure 1: Multi-stage experimental workflow (Screening, Reading Task, and Multi-Dimensional Evaluation).*
 
 ---
 
-### Empirical Outcomes
+## 📈 Empirical Outcomes
 
 | Immediate Comprehension | Conceptual Reversal Detection |
 | :---: | :---: |
@@ -59,7 +64,8 @@ The experimental phase evaluated the differential impacts of generative AI assis
 ## 📁 Repository Structure
 ```text
 ├── Figures/                               # High-resolution (300 DPI) publication figures
-│   ├── Figure_1_Methodology.png
+│   ├── graphical abstarctt.png            # Graphical Abstract
+│   ├── figure 1.png                       # Methodology Pipeline
 │   ├── Figure_2_Immediate_Comprehension_v2.png
 │   ├── Figure_3_Conceptual_Reversal_Detection_v2.png
 │   ├── Figure_4_Cognitive_Strain_v2.png
