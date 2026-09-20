@@ -1,0 +1,80 @@
+           n    P2_mean     P2_sd  ... Tot_range Tot_median Tot_iqr
+Habitual  54       17.5  1.299492  ...  (29, 39)       34.0     4.0
+Moderate  18  11.944444  0.802366  ...  (20, 26)       23.0    2.75
+Active     9   7.111111  0.781736  ...  (11, 16)       13.0     3.0
+
+[3 rows x 12 columns]
+
+ANOVA Total (3 groups):
+                     sum_sq    df           F        PR(>F)
+C(Group_Note)  4271.376543   2.0  418.260055  2.019075e-42
+Residual        398.277778  78.0         NaN           NaN
+Eta squared: 0.9147 (omega2=0.9103)
+Levene Total: LeveneResult(statistic=1.5037245256500353, pvalue=0.2286736944433578)
+Shapiro Habitual: W=0.9735, p=0.274
+Shapiro Moderate: W=0.9240, p=0.1523
+Shapiro Active: W=0.9248, p=0.4336
+
+Tukey HSD:
+   Multiple Comparison of Means - Tukey HSD, FWER=0.05   
+========================================================
+ group1   group2  meandiff p-adj  lower    upper  reject
+--------------------------------------------------------
+  Active Habitual  20.7778   0.0  18.8339 22.7216   True
+  Active Moderate   9.6111   0.0    7.407 11.8152   True
+Habitual Moderate -11.1667   0.0 -12.6361 -9.6973   True
+--------------------------------------------------------
+
+Kruskal-Wallis: KruskalResult(statistic=55.5667974864454, pvalue=8.586639645601316e-13)
+
+Crosstab Orient:
+ Orient      A   B   C
+Group_Note           
+Active      9   0   0
+Habitual    0  54   0
+Moderate    0   0  18 
+Orient Chi2=162.0000, p=5.445e-34, dof=4
+
+Crosstab SJI:
+ SJI         A  B   C
+Group_Note          
+Active      6  3   0
+Habitual    0  0  54
+Moderate    0  9   9 
+SJI Chi2=85.3393, p=1.285e-17, dof=4
+
+Cohen's d Habitual vs Active: 8.8619
+Cohen's d Habitual vs Moderate: 4.8164
+Cohen's d Moderate vs Active: 5.2141
+
+=== ANOVA P2 ===
+                    sum_sq    df           F        PR(>F)
+C(Group_Note)  1064.666667   2.0  394.196203  1.662718e-41
+Residual        105.333333  78.0         NaN           NaN
+Eta2=0.9100
+Tukey:
+  Multiple Comparison of Means - Tukey HSD, FWER=0.05  
+=======================================================
+ group1   group2  meandiff p-adj  lower   upper  reject
+-------------------------------------------------------
+  Active Habitual  10.3889   0.0  9.3892 11.3885   True
+  Active Moderate   4.8333   0.0  3.6998  5.9668   True
+Habitual Moderate  -5.5556   0.0 -6.3112 -4.7999   True
+-------------------------------------------------------
+
+=== ANOVA P4 ===
+                    sum_sq    df           F        PR(>F)
+C(Group_Note)  1071.043210   2.0  285.340544  1.325779e-36
+Residual        146.388889  78.0         NaN           NaN
+Eta2=0.8798
+Tukey:
+ Multiple Comparison of Means - Tukey HSD, FWER=0.05  
+======================================================
+ group1   group2  meandiff p-adj lower   upper  reject
+------------------------------------------------------
+  Active Habitual  10.3889   0.0 9.2104 11.5674   True
+  Active Moderate   4.7778   0.0 3.4415   6.114   True
+Habitual Moderate  -5.6111   0.0 -6.502 -4.7203   True
+------------------------------------------------------
+
+Paired t P2 vs P4 (all n=90): t=4.5745, p=1.537e-05
