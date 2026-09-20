@@ -1,0 +1,13 @@
+name: cog-offload-env
+channels:
+- conda-forge
+dependencies:
+- python=3.11
+- r-base
+- r-readr
+- r-dplyr
+- r-yaml
+- jupyterlab
+- ipykernel
+- r-irkernel
+- pyyaml

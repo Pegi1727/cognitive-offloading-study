@@ -1,0 +1,10 @@
+project:
+  title: The Cognitive Cost of Cognitive Offloading
+  author: Pegah Merrikhi
+paths:
+  raw_data: data/screening_data.csv
+  experimental_data: data/experimental_phase_data.csv
+  output_dir: outputs/
+analysis_params:
+  alpha_level: 0.05
+  seed: 42

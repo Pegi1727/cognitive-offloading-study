@@ -1,0 +1,8 @@
+title: 'The Cognitive Cost of Cognitive Offloading: An Experimental Study'
+version: 1.0.0
+license: MIT
+description: Analysis scripts and validation data for cognitive offloading research.
+keywords:
+- cognitive offloading
+- ANOVA
+- reproducibility
